@@ -1,0 +1,4 @@
+result/
+*.mp4
+*.aac
+__pycache__/
