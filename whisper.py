@@ -4,7 +4,7 @@ import boto3
 s3 = boto3.client('s3')
 
 vidList = []
-objects = s3.list_objects(Bucket='srvbcvideo', Marker='da2.mp4',Prefix='d')
+objects = s3.list_objects(Bucket='srvbcvideo', Marker='r.mp4',Prefix='r')
 print("objects: {}".format(len(objects['Contents'])))
 for object in objects['Contents']:
   if(len(object['Key']) == 12):
