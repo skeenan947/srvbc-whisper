@@ -4,7 +4,7 @@ import sys
 import boto3
 s3 = boto3.client('s3')
 
-vidList = [sys.argv[1]]
+vidList = sys.argv[1].split(',')
 
 for vid in vidList:
   print('Decoding: {}'.format(vid))
