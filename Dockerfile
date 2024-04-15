@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt update -q && apt install -qy ffmpeg git python3-pip awscli
+RUN apt update -q && DEBIAN_FRONTEND=noninteractive apt install -qy ffmpeg git python3-pip awscli
 
 ADD requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
