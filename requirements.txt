@@ -1,3 +1,2 @@
-openai-whisper
-git+https://github.com/dsymbol/decipher
+git+https://github.com/m-bain/whisperx.git
 boto3
